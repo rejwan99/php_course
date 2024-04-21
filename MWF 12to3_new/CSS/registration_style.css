@@ -1,0 +1,22 @@
+table{
+    background-color: lightcyan;
+    border-color: black;
+}
+#reg{
+background-color: yellow;
+height: 40px;
+color: blue;
+text-align: center;
+}
+.name,#address2,.password,.phone,#degree,#image{
+	background-color: gray;
+}
+
+.address1,#email,#date,#gender,.language{
+background-color: lightgrey;
+}
+.submit{
+	background-color: lightslategray;
+	text-align: center;
+	height: 25px;
+}

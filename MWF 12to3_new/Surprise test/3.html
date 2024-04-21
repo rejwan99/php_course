@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>prime number</title>
+</head>
+<body>
+<h2>Prime Number Check</h2>
+<script type="text/javascript">
+	var num, i, check=0;
+	num=18;
+	for(i=2;i<num;i++)
+		{
+			if(num%2==0)
+			{
+				check++;
+				break;
+			}
+		}
+		if(check==0)
+		{
+			document.write(num+"  is a prime number");
+		}
+		else
+		{
+			document.write(num+" is a not prime number");
+		}
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admission form</title>
+</head>
+<body>
+<form>
+	<table border="1" cellpadding="2px" cellspacing="0px">
+		<tr>
+			<td colspan="2"><h2>ABC SCHOOL</h2><h3>Admission Form</h3></td>
+		</tr>
+		<tr>
+			<td>Student Name :</td>
+			<td><input type="text" name="name" required placeholder="Enter your name"></td>
+		</tr>
+		<tr>
+			<td>Fathers Name :</td>
+			<td><input type="text" name="fname"></td>
+		</tr>
+		<tr>
+			<td>Mothers Name :</td>
+			<td><input type="text" name="mname"></td>
+		</tr>
+		<tr>
+			<td>Address :</td>
+			<td><textarea placeholder="full Address"></textarea></td>
+		</tr>
+		<tr>
+			<td>DOB :</td>
+			<td><input type="date" name="dob"></td>
+		</tr>
+		<tr>
+			<td>Gender :</td>
+			<td><input type="radio" name="name">Male
+				<input type="radio" name="name">Female
+				<input type="radio" name="name">Others
+			</td>
+		</tr>
+		<tr>
+			<td>Email:</td>
+			<td><input type="email" name="email" required></td>
+		</tr>
+		<tr>
+			<td>Phone No. :</td>
+			<td><input type="number" name="mobile" required></td>
+		</tr>
+		<tr>
+			<td>Last Qualification :</td>
+			<td><input type="text" name="school"></td>
+		</tr>
+		<tr>
+			<td>Upload last maksheet</td>
+			<td><input type="file" name="upmarksheet"></td>
+		</tr>
+		<tr>
+			<td colspan="2" id="sub1" s><input type="submit" id="sub" name="submit" value="Submit"></td>
+		</tr>
+	</table>
+</form>
+<style type="text/css">
+	body
+	{
+		margin: 15px;
+		padding:1s5px;
+	}
+	h3
+	{
+		text-align: center;
+		color: brown;
+	}
+	h2
+	{
+		text-align: center;
+		color: darkgreen;
+	}
+	table
+	{
+		border: hidden;
+		background-color: cyan;
+		border-color: cyan;
+	}
+	#sub1
+	{
+		text-align: center;
+	}
+	td
+	{
+		color: blue;
+	}
+	input{
+		background-color: lightgray;
+	}
+	textarea
+	{
+		background-color: lightgray;
+	}
+	#sub
+	{
+		background-color: lightpink;
+	}
+
+</style>
+</body>
+</html>

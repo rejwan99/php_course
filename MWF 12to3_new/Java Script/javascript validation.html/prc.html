@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>abc</title>
+</head>
+<body id="b1">
+choose color: 
+<select id="s3">
+	<option>select</option>
+	<option value="red">Red</option>
+	<option value="green">green</option>
+	<option value="ot">other</option>
+</select>	
+<p id="s1">enter color: <input type="text" id="c1"  onchange="fun()"></p>
+<script type="text/javascript">
+	function fun()
+	{
+		var color= document.getElementById("c1").value;
+		document.getElementById("b1").style.backgroundColor=color;
+	}
+</script>	  		   
+</body>
+</html>

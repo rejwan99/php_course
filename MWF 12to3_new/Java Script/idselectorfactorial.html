@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Factorial</title>
+</head>
+<body>
+<form>
+	Enter a:<input type="text" id="f7"><br>
+	<input type="submit" name="Submit" value="submit" onclick="fun()"><br>
+</form>
+<script type="text/javascript">
+	function fun()
+	{
+		a=parseInt(document.getElementById("f7").value);
+	    f=1
+		for(i=1;i<=a;i++)
+		{
+			f=f*i
+		}
+	document.write(f);
+	}
+</script>
+</body>
+</html>

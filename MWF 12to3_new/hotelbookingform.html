@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel Booking</title>
+</head>
+<body>
+<form>
+<table border="1">
+	<tr>
+		<td colspan="4" height="100" align="center" bgcolor="Aquamarine"><font color=""><h2>Hotel ABC</h2></td>
+	</tr>
+	<tr height="60">
+		<td bgcolor="wheat">First Name:</td>
+		<td bgcolor="lightgray"><input type="text" name="firstname" placeholder="Enter your first name"></td>
+		<td bgcolor="wheat">Last Name:</td>
+		<td bgcolor="lightgray"><input type="text" name="lastname" placeholder="Enter your last name"></td>
+	</tr>
+	<tr height="60">
+		<td bgcolor="wheat">Address 1:</td>
+		<td bgcolor="lightgray"><textarea name="address1" required></textarea></td>
+		<td bgcolor="wheat">Address 2:</td>
+		<td bgcolor="lightgray"><textarea name="address2"></textarea></td>
+	</tr>
+	<tr height="60">
+		<td bgcolor="wheat">City:</td>
+		<td bgcolor="lightgray"><input type="text" name="city"></td>
+		<td bgcolor="wheat">State</td>
+		<td bgcolor="lightgray"><input type="text" name="state"></td>
+	</tr>
+	<tr height="60">
+	<td bgcolor="wheat">Phone</td>
+	<td bgcolor="lightgray"><input type="number" name="phone" required></td>	
+	<td bgcolor="wheat">Email:</td>
+	<td bgcolor="lightgray"><input type="email" name="email" required></td>
+	</tr>
+	<tr height="60">
+		<td bgcolor="wheat">Check-in Date: </td>
+		<td bgcolor="lightgray"><input type="date" name="date"></td>
+		<td bgcolor="wheat">Check-out Date:</td>
+		<td bgcolor="lightgray"><input type="date" name="date"></td>
+	</tr>
+	<tr height="30">
+		<td rowspan="2" colspan="2" bgcolor="wheat">Room Preference<br>
+		<input type="radio" name="room">Standerd
+		<input type="radio" name="room">Delux
+		<input type="radio" name="room">Suite</td>
+		<td bgcolor="wheat">Adults</td>
+		<td bgcolor="wheat">Children</td>
+	</tr>
+	<tr height="50">
+		<td bgcolor="lightgray"><select name="Adult">
+		<option>Select</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	    </select></td>
+		<td bgcolor="lightgray"><select name="Children">
+		<option>Select</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	    </select></td>
+	</tr>
+	<tr>
+		<td colspan="4" align="center" bgcolor="wheat" height="40"> 
+			<input type="submit" name="submit" value="Confirm Booking">
+			<input type="reset" name="Reset" value="Cancel">
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

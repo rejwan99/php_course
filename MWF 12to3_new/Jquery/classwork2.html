@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>class work</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body id="b1">
+Choose color: 
+<select id="s1">
+	<option>select</option>
+	<option value="red">Red</option>
+	<option value="green">Green</option>
+	<option value="blue">Blue</option>
+	<option value="orange">Orange</option>
+</select>
+<script type="text/javascript">
+	$("document").ready(function(){
+		$("#s1").change(function(){
+			var a = $("#s1").val();
+			$("#s1").css("background-color",a);
+		});
+	});
+</script>
+</body>
+</html>

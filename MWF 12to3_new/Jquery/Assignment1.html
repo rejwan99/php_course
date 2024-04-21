@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>abd</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+Enter Name : <input type="text" id="name"><br>
+Enter Address : <input type="text" id="add1"><br>
+Enter Address2 : <textarea id="add2"></textarea><br>
+Enter email : <input type="email" id="email"><br>
+Enter password: <input type="password" id="pass"><br>
+Enter DOB : <input type="date" id="dob"><br>
+Enter phone no. : <input type="number" id="phone"><br>
+Selet gender : <input type="radio" name="gender" id="m1" value="male">Male
+			   <input type="radio" name="gender" id="fe1" value="female">Female
+			   <input type="radio" name="gender" id="ot1" value="other">Other<br>
+Degree : <select id="op">
+		<option >select</option>
+		<option >B.Tech</option>
+		<option >M.Tech</option>
+		<option >M.A</option>
+		<option >B.sc</option>
+		</select><br>
+Language: <input type="checkbox" name="language" id="hi" value="hinde">Hindi
+	          <input type="checkbox" name="language" id="ben" value="bengali">Bengali 
+	          <input type="checkbox" name="language" id="eng" value="english">English<br>
+<input type="submit" id="submit" value="Submit">
+<script type="text/javascript"> 
+	$("document").ready(function(){
+		$("#submit").click(function(){
+			var nme= $("#name").val();
+			var add= $("#add1").val();
+			var add2= $("#add2").val();
+			var eml= $("#email").val();
+			var pas=$("#pass").val();
+			var dob=$("#dob").val();
+			var pho= $("#phone").val();
+			var gn1= $('input[type="radio"]:checked');
+			var deg= $("#op").val();
+			var lang= $("#hi,#ben,#eng").val();
+			document.write("My name is :"+nme+"<br>");
+			document.write("My address1 :"+add+"<br>");
+			document.write("My address2 :"+add2+"<br>");
+			document.write("My email id is :"+eml+"<br>");
+			document.write("My password is :"+pas+"<br>");
+			document.write("My DOB is:"+dob+"<br>");
+			document.write("My Phone No. is :"+pho+"<br>");
+			document.write("My gender is :"+gn1.val()+"<br>");
+			document.write("My degree is: "+deg+"<br>")
+			document.write("My languege is:"+lang+"<br>")
+		});
+	});
+</script>
+</body>
+</html>

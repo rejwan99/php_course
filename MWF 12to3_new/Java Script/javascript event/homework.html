@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>abc</title>
+</head>
+<body id="b1">
+Choose color: <select id="s1" onchange="fun(),fun1()">
+	<option value="select">Select</option>
+	<option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="ot">others</option>
+</select><br>
+<p id="p1">enter color: <input type="text" id="p2" onkeyup="fun2()"></p> 
+<script type="text/javascript">
+	function fun()
+	{
+		color=document.getElementById("s1").value;
+		 if (color.value == "red","green","blue") 
+		 {
+		 	document.getElementById("b1").style.backgroundColor=color;
+		 }
+		 if(s1.value == "ot")
+		 {
+		 	document.getElementById("b1").style.backgroundColor="";
+		 }
+		 if(s1.value == "select")
+		 {
+		 	document.getElementById("b1").style.backgroundColor="";
+		 }
+	}
+	function fun1()
+	{	
+		clr=document.getElementById("s1"); 
+	    if(clr.value  == "ot")
+	    {
+	    	document.getElementById("p1").style.visibility="visible";
+	    }
+	    else
+	    {
+	    	document.getElementById("p1").style.visibility="hidden";
+	    }
+	}
+	function fun2()
+	{
+		var color=document.getElementById("p2").value;
+		document.getElementById("b1").style.backgroundColor=color;
+	}
+</script> 
+<style type="text/css">
+ #p1{
+ 	visibility: hidden;
+ }
+</style>
+</body>
+</html>

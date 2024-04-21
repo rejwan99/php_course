@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="registration_style.css">
+</head>
+<body>
+	<form>
+<table border="1">
+	<tr>
+	<td colspan="2" id="reg"><h2>Registration Form</h2></td> 
+	</tr>
+	<tr>
+		<td class="name">Enter Name:</td>
+		<td><input type="text" name="Name"></td>
+	</tr>
+	<tr>
+		<td class="address1">Enter Address1:</td>
+		<td><input type="text" name="address2"></td>
+	</tr>
+	<tr>
+		<td id="address2">Enter Address2:</td>
+		<td><textarea name="address2"></textarea></td>
+	</tr>
+	<tr>
+		<td id="email">Enter Email:</td>
+		<td><input type="email" name="email"></td>
+	</tr>
+	<tr>
+		<td class="password">Enter Password:</td>
+		<td><input type="password" name="password"></td>
+	</tr>
+	<tr>
+		<td id="date">Enter Date:</td>
+		<td><input type="date" name="dob"></td>
+	</tr>
+	<tr>
+		<td class="phone">Enter Phone:</td>
+		<td><input type="number" name="phone"></td>
+	</tr>
+	<tr>
+		<td id="gender">Enter Gender:</td>
+		<td><input type="radio" name="gender">Male
+	              <input type="radio" name="gender">Female
+	              <input type="radio" name="gender">Other</td>
+	</tr>
+	<tr>
+		<td id="degree">Degree:</td>
+		<td><select name="degree">
+		<option>Select</option>
+		<option>B.Tech</option>
+		<option>M.Tech</option>
+		<option>M.A</option>
+		<option>B.sc</option>
+	    </select></td>
+	</tr>
+	<tr>
+		<td class="language">Language:</td>
+		<td><input type="checkbox" name="language">Hindi
+	          <input type="checkbox" name="language">Bengali 
+	          <input type="checkbox" name="language">English</td>
+	</tr>
+	<tr>
+		<td id="image">Upload Image:</td>
+		<td><input type="file" name="uploadimage"></td>
+	</tr>
+	<tr>
+		<td class="submit" colspan="2"><input type="submit" name="submit"> <input type="reset" name="reset"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

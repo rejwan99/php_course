@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>abd</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+enter name : <input type="text" id="name"><br>
+enter email : <input type="email" id="email"><br>
+enter password : <input type="text" id="pass"><br>
+enter number : <input type="number" id="number"><br>
+<input type="submit" id="submit" value="Submit">
+<script type="text/javascript"> 
+	$("document").ready(function(){
+		$("#submit").click(function(){
+			var nme= $("#name").val();
+			var ema= $("#email").val();
+			var nme3= $("#pass").val();
+			var nm4= $("#number").val();
+			document.write("This is my name :"+nme+"<br>");
+			document.write("This is my email :"+ema+"<br>");
+			document.write("this my password :"+nme3+"<br>");
+			document.write("This is my number :"+nm4);
+		});
+	});
+</script>
+</body>
+</html>

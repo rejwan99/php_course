@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>first practice</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Welecome to our page.</h1>
+<form id="s1" return>
+	<table border="1" cellpadding="10px" cellspacing="0">
+		<tr>
+			<td colspan="2"><h3>Sign up<h3></td>
+		</tr>
+		<tr>
+			<td>Enter name</td>
+			<td><input type="text" id="name"></td>
+		</tr>
+		<tr>
+			<td>Date of Barth</td>
+			<td><input type="date" id="date"></td>
+		</tr> 
+		<tr>
+			<td>Enter Email</td>
+			<td><input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><span id="s2"></span></td>
+		</tr>
+		<tr>
+			<td>Phone No. </td>
+			<td><input type="number" id="phone"></td>
+		</tr>
+		<tr>
+			<td>Creat password</td>
+			<td><input type="password" id="pass"></td>
+	    </tr>
+	    <tr>
+	    	<td colspan="2"><input type="checkbox" name="show"> Show password</td>
+	    </tr>
+	    <tr>
+	    	<td>Confirm password</td>
+	    	<td><input type="password" name="pass2"></td>
+	    </tr>
+	    <tr>
+	    	<td colspan="2" id="sub" ><input type="submit" name="submit" value="Submit"></td>
+	    </tr>	
+	</table>
+</form>
+<script type="text/javascript">
+	$("document").ready(function(){
+		$("#s1").submit(function(){
+		var eml=$("#email").val();
+			if(eml !=" ")
+			{
+			  if(eml.search([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$)=-1)
+			  {
+			  	#
+			  }	
+			}
+			else
+			{
+			  $("#s2").html("Plese fill the input");
+			}
+		});
+	});
+</script>
+</body>
+</html>

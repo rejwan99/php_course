@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+</head>
+<body>
+<form name="f1" onsubmit="fun3()">
+	<table border="1">
+	<tr>
+	<td colspan="2" align="center"> <font color="blue">Registration Form</td> 
+	</tr>
+	<tr>
+		<td>Enter Name:</td>
+		<td><input type="text" name="Name"></td>
+	</tr>
+	<tr>
+		<td>Enter Address1:</td>
+		<td><input type="text" name="address2"></td>
+	</tr>
+	<tr>
+		<td>Enter Address2:</td>
+		<td><textarea name="address2"></textarea></td>
+	</tr>
+	<tr>
+		<td>Enter Email:</td>
+		<td><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="eml" onkeyup="return fun()"><span id="s1"></span>
+		</td>
+	</tr>
+	<tr><td>Enter Password:</td>
+		<td><input type="password" name="pass" id="pas" onkeyup="return fun1()"> <span id="s2"></span></td>
+	</tr>
+	<tr>
+		<td>Enter Date:</td>
+		<td><input type="date" name="dob"></td>
+	</tr>
+	<tr>
+		<td>Enter Phone:</td>
+		<td><input type="number" name="mobile" id="mob" onkeyup="return fun2()"> <span id="s3"></span></td>
+	</tr>
+	<tr>
+		<td>Enter Gender:</td>
+		<td><input type="radio" name="gender">Male
+	              <input type="radio" name="gender">Female
+	              <input type="radio" name="gender">Other</td>
+	</tr>
+	<tr>
+		<td>Degree:</td>
+		<td><select name="degree">
+		<option>Select</option>
+		<option>B.Tech</option>
+		<option>M.Tech</option>
+		<option>M.A</option>
+		<option>B.sc</option>
+	    </select></td>
+	</tr>
+	<tr>
+		<td>Language:</td>
+		<td><input type="checkbox" name="language">Hindi
+	          <input type="checkbox" name="language">Bengali 
+	          <input type="checkbox" name="language">English</td>
+	</tr>
+	<tr>
+		<td>Upload Image:</td>
+		<td><input type="file" name="uploadimage"></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><input type="submit" name="submit"> <input type="reset" name="reset">
+		</td>
+	</tr>
+</table>
+</form>
+<script type="text/javascript">
+	function fun()
+	{	
+		 var a=document.getElementById("eml").value;
+		 if(a.search(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/)==-1)
+		 {
+		 	document.getElementById("s1").innerHTML="**Plese match this pattern- [a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$";
+		 	document.getElementById("s1").style.color="red"
+		   	return false;
+		 }
+		 else 
+		 {
+		 	document.getElementById("s1").innerHTML="successful";
+		   	document.getElementById("s1").style.color="green"
+		   	return false;
+		 }
+
+	}
+	function fun1()
+	{ 
+		var b= document.getElementById("pas").value;
+		   if(b=="")
+		   {
+		   	document.getElementById("s2").innerHTML="**Plese enter your Password";
+		   	document.getElementById("s2").style.color="red"
+		   	return false;
+		   }
+		   if(b.length<8)
+		   {
+		   	document.getElementById("s2").innerHTML="**Plese enter 8 digits Password";
+		   	document.getElementById("s2").style.color="red"
+		   	return false;
+		   }
+		   if(b.search(/[A-Z]/)==-1)
+		   {
+		   	document.getElementById("s2").innerHTML="**Plese enter min one uppercase alphabet";
+		   	document.getElementById("s2").style.color="red"
+		   	return false;
+		   }
+		   if(b.search(/[a-z]/)==-1)
+		   {
+		   	document.getElementById("s2").innerHTML="**Plese enter min one lowercase alphabet";
+		   	document.getElementById("s2").style.color="red"
+		   	return false;
+		   }
+		   if(b.search(/[0-9]/)==-1)
+		   {
+		   	document.getElementById("s2").innerHTML="**Plese enter min one numeric value";
+		   	document.getElementById("s1").style.color="red"
+		   	return false;
+		   }
+		   if(b.search(/[#$%@]/)==-1)
+		   {
+		   	document.getElementById("s2").innerHTML="**Plese enter min one special character.[#/$/%/@]";
+		   	document.getElementById("s2").style.color="red"
+		   	return false;
+		   }
+		   else
+		   {
+		   		document.getElementById("s2").innerHTML="successful";
+		   	document.getElementById("s2").style.color="green"
+		   	return false;
+		   }
+	}
+	function fun2()
+	{
+		var c= document.getElementById("mob").value;
+		   if(c=="")
+		   {
+		   	document.getElementById("s3").innerHTML="**Plese enter your mobile number";
+		   	document.getElementById("s3").style.color="red"
+		   	return false;
+		   }
+		   if(c.length<10)
+		   {
+		   	document.getElementById("s3").innerHTML="**Plese enter 10 digits mobile numbers";
+		   	document.getElementById("s3").style.color="red"
+		   	return false;
+		   }
+		   if(isNaN(c))
+		   {
+		   	document.getElementById("s3").innerHTML="**Plese enter only numbers";
+		   	document.getElementById("s3").style.color="red"
+		   	return false;
+		   }
+		   if((c.charAt(0)!=9) && (c.charAt(0)!=8) && (c.charAt(0)!=7))
+		   {
+		   	document.getElementById("s3").innerHTML="**Plese enter correct numbers";
+		   	document.getElementById("s3").style.color="red"
+		   	return false;
+		   } 
+		   else
+		   {
+		   	document.getElementById("s3").innerHTML="";
+		   	return false
+		   }
+	}
+</script>
+</body>
+</html>

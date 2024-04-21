@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Name Selector</title>
+</head>
+<body>
+	<form name="f1">
+enter a: <input type="text" name="f11"><br>
+enter b: <input type="text" name="f12"><br>
+<input type="submit" name="submit" value="submit" onclick="fun()">
+</form>
+<script type="text/javascript">
+	function fun()
+	{
+a = parseInt(document.f1.f11.value);
+b = parseInt(document.f1.f12.value);
+document.write("The sum is:"+(a+b));
+	}
+</script>
+</body>
+</html>

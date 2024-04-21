@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Switch</title>
+</head>
+<body>
+Enter a : <input type="text" id="a"><br>
+Enter b : <input type="text" id="b"><br>
+<pre><p><font size="4px">1.sum  2.sub  3.Mult 4.Div</font></p></pre>
+Enter Choice: <input type="text" id="op"><br>
+<input type="submit" name="Submit" value="Submit" onclick="fun()">
+</body>
+<script type="text/javascript">
+	function fun()
+	{
+		a=parseInt(document.getElementById("a").value);
+		b=parseInt(document.getElementById("b").value);
+		opr=document.getElementById("op").value;
+	switch(opr)
+		{
+			case '1' :document.write("This is sum:"+(a+b));
+						break;
+			case '2' :document.write("This is sub:"+(a-b));
+						break; 
+			case '3' :document.write("This is mult:"+(a*b));
+						break; 
+			case '4' :document.write("This is div:"+(a/b));
+						break; 	
+			default : alert("Wrong Input");											 
+
+		}	
+	}
+</script>
+</html>

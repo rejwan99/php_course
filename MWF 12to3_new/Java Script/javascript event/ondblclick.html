@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ondblclick</title>
+</head>
+<body>
+	
+enter name: <input type="text" id="name"><br>
+<input type="submit" name="submit" value="Submit" ondblclick="fun()" >
+
+<script type="text/javascript">
+	function fun()
+	{
+		nme= document.getElementById("name").value;
+		// document.write(nme);
+		alert(nme);
+	}
+</script>
+</body>
+</html>

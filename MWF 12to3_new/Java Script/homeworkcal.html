@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Work</title>
+</head>
+<body>
+	<h1>Calculator</h1>
+<form>
+	<table border="1" bgcolor="lightgray">
+		<tr>
+			<td>Enter A:</td>
+			<td><input type="text" id="f1"></td>
+		</tr>
+		<tr>
+			<td>Enter B: </td>
+			<td><input type="text" id="f2"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" name="submit" value="Sum" onclick="fun()">
+			<input type="submit" name="submit" value="Sub" onclick="fun1()">
+			<input type="submit" name="submit" value="Mult" onclick="fun2()">	
+			<input type="submit" name="submit" value="Div" onclick="fun3()"></td>
+		</tr>
+
+	</table>
+</form>
+<script type="text/javascript">
+	function fun()
+	{
+		A=parseInt(document.getElementById("f1").value);
+		B=parseInt(document.getElementById("f2").value);
+		document.write("The Sum is:"+(A+B));
+	}
+	function fun1()
+	{
+		A=parseInt(document.getElementById("f1").value);
+		B=parseInt(document.getElementById("f2").value);
+		document.write("The Sub is:"+(A-B));
+	}
+	function fun2()
+	{
+		A=parseInt(document.getElementById("f1").value);
+		B=parseInt(document.getElementById("f2").value);
+		document.write("The Mult is:"+(A*B));
+	}
+	function fun3()
+	{
+		A=parseInt(document.getElementById("f1").value);
+		B=parseInt(document.getElementById("f2").value);
+		document.write("The Div is:"+(A/B));
+	}	
+</script>
+</body>
+</html>

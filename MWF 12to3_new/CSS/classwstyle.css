@@ -1,0 +1,34 @@
+.body{
+padding-left:15px ;
+/*background-color: #99b3ff;*/
+background-image: url('img/bg1.jpg');
+background-size: cover;
+}
+a{
+	text-decoration: none;
+	font: white;
+}
+h1{
+	text-align: center;
+	
+}
+table{
+	border: 1px;
+	background-color: lightcyan;
+	width: 250px;
+	height: 200px;
+	border-radius: 5px;
+}
+h2{
+	color: darkred;
+}
+#td1{
+background-color: yellow;
+}
+#name1,#add1,#city1,#ph1,#email1,#ci1,#co1{
+	background-color: lightgrey;
+}
+.submit,.reset{
+	border-radius: 50px;
+	background-color: lightskyblue;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>abc</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>	
+<div><button id="s1">show</button><br>
+<img id="Messi" src="Messi.jpg" height="200" width="200"><br>
+<button id="s2">hide</button><br></div>
+<div><button id="s3">show</button><br>
+<img id="Nymar" src="Nymar.jpg" height="200" width="200"><br>
+<button id="s4">hide</button><br></div>
+<div><button id="s5">show</button><br>
+<img id="Ronaldo" src="Ronaldo.jpg" height="200" width="200"><br>
+<button id="s6">hide</button><br></div>
+<script type="text/javascript">
+	$("document").ready(function fun(){
+		$("#s1").click(function(){
+			$("#Messi").show();
+		});
+		$("#s2").click(function(){
+			$("#Messi").hide();
+		});
+		$("#s3").click(function(){
+			$("#Nymar").show();
+		});
+		$("#s4").click(function(){
+			$("#Nymar").hide();
+		});
+		$("#s5").click(function(){
+			$("#Ronaldo").show();
+		});
+		$("#s6").click(function(){
+			$("#Ronaldo").hide();
+		});
+	});
+</script>
+<style type="text/css">
+	img{
+		display: none;
+	}
+	body{
+		display: flex;
+		padding: 3px;
+	}
+	div
+	{
+		padding: 50px;
+	}
+</style>
+</body>
+</html>

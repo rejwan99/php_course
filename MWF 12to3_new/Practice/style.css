@@ -1,0 +1,31 @@
+body
+{	
+ background-color: gray;
+ align-content: center;
+}
+table
+{
+ background-color: lightcyan;
+ border-style: hidden;
+ align-items: center;
+}
+tr
+{
+	border-style: hidden;
+}
+td
+{
+	border-style: hidden;
+}
+h1
+{
+	text-align: center;
+}
+h3
+{
+	text-align: center;
+}
+#sub
+{
+	text-align: center;
+}
